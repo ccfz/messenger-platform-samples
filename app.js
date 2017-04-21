@@ -245,6 +245,10 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 
+    if (quickReplyPayload == "GREAT") {
+      sendTextMessage(senderID, "Naaaahh he is the greatest!")
+    }
+    
     sendTextMessage(senderID, "Quick reply tapped");
     return;
   }
@@ -699,21 +703,21 @@ function sendQuickReply(recipientId) {
       id: recipientId
     },
     message: {
-      text: "What's your favorite movie genre?",
+      text: "How do you like Daniel?",
       quick_replies: [
         {
           "content_type":"text",
-          "title":"Action",
+          "title":"GREAT",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
         },
         {
           "content_type":"text",
-          "title":"Comedy",
+          "title":"GREATER",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_COMEDY"
         },
         {
           "content_type":"text",
-          "title":"Drama",
+          "title":"GREATEST",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_DRAMA"
         }
       ]
