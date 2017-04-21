@@ -225,8 +225,6 @@ function receivedMessage(event) {
     senderID, recipientID, timeOfMessage);
   console.log(JSON.stringify(message));
 
-  console.log("MESSAGE OBJECT")
-  console.log(message.is_echo)
   var isEcho = message.is_echo;
   var messageId = message.mid;
   var appId = message.app_id;
@@ -307,6 +305,10 @@ function receivedMessage(event) {
 
       case 'account linking':
         sendAccountLinking(senderID);
+        break;
+
+      case 'DANIEL':
+        sendTextMessage(senderID, "WICKED DANIEL!" );
         break;
 
       default:
