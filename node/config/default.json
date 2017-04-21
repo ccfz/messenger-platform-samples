@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "9a588d50d90d440b94c1e1b187b9d49a",
+    "pageAccessToken": "EAAKSZCNoZB5qQBAG0F2DziZBx8KW7PfLI52si7wjI8CwmUXtxTr2CDZCSPnmNCUQPOyTeZA8uTy8Acu9u905QkhBjkS6HZBqWaSll2XdduzLAZAgByfleNkSR8Yt5WG4yA2VGX2oCZBQsZCT6R7DQQ2nump8ZAtj4rXdw8Lgr5oxdsxQZDZD",
+    "validationToken": "caspar",
+    "serverURL": "https://fb-chat-bot-demo.herokuapp.com/"
 }
